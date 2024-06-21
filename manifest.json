@@ -4,32 +4,32 @@
   "description": "World's most attractive blog providing insights on various topics.",
   "icons": [
     {
-      "src": "/icons/icon-48x48.png",
+      "src": "https://rohitks77.github.io/rohitks77-manifest/icons/icon-48x48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-72x72.png",
+      "src": "https://rohitks77.github.io/rohitks77-manifest/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-96x96.png",
+      "src": "https://rohitks77.github.io/rohitks77-manifest/icons/icon-96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-144x144.png",
+      "src": "https://rohitks77.github.io/rohitks77-manifest/icons/icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-192x192.png",
+      "src": "https://rohitks77.github.io/rohitks77-manifest/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "https://rohitks77.github.io/rohitks77-manifest/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -41,70 +41,52 @@
   "orientation": "portrait-primary",
   "shortcuts": [
     {
-      "name": "CTEVT Notes",
-      "short_name": "CTEVT",
-      "description": "Notes and resources for CTEVT students.",
+      "name": "CTEVT All Notes",
+      "short_name": "CTEVT Notes",
+      "description": "Access all CTEVT notes",
       "url": "/p/ctevt-all-notes_7.html",
       "icons": [
         {
           "src": "/icons/shortcut-icon-ctevt.png",
-          "sizes": "192x192",
-          "type": "image/png"
+          "sizes": "192x192"
         }
       ]
     },
     {
       "name": "Class 11 All Notes",
-      "short_name": "Class 11",
+      "short_name": "Class 11 Notes",
       "description": "Access all notes for Class 11",
       "url": "/p/class-11-all-notes.html",
       "icons": [
         {
-          "src": "/icons/shortcut-icon-class11.png",
-          "sizes": "192x192",
-          "type": "image/png"
+          "src": "https://rohitks77.github.io/rohitks77-manifest/icons/shortcut-icon-class11.png",
+          "sizes": "192x192"
         }
       ]
     },
     {
       "name": "Class 12 All Notes",
-      "short_name": "Class 12",
+      "short_name": "Class 12 Notes",
       "description": "Access all notes for Class 12",
       "url": "/p/neb-class-12-all-notes.html",
       "icons": [
         {
-          "src": "/icons/shortcut-icon-class12.png",
-          "sizes": "192x192",
-          "type": "image/png"
+          "src": "https://rohitks77.github.io/rohitks77-manifest/icons/shortcut-icon-class12.png",
+          "sizes": "192x192"
         }
       ]
     },
     {
       "name": "BTech All Notes",
-      "short_name": "BTech",
+      "short_name": "BTech Notes",
       "description": "Access all BTech notes",
       "url": "/p/btech-all-notes.html",
       "icons": [
         {
-          "src": "/icons/shortcut-icon-btech.png",
-          "sizes": "192x192",
-          "type": "image/png"
+          "src": "https://rohitks77.github.io/rohitks77-manifest/icons/shortcut-icon-btech.png",
+          "sizes": "192x192"
         }
       ]
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/icons/screenshot1.png",
-      "sizes": "640x480",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/icons/screenshot2.png",
-      "sizes": "640x480",
-      "type": "image/png",
-      "form_factor": "narrow"
     }
   ]
 }
