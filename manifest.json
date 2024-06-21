@@ -41,32 +41,70 @@
   "orientation": "portrait-primary",
   "shortcuts": [
     {
-      "name": "CTEVT All Notes",
-      "short_name": "CTEVT Notes",
-      "description": "Access all CTEVT notes",
+      "name": "CTEVT Notes",
+      "short_name": "CTEVT",
+      "description": "Notes and resources for CTEVT students.",
       "url": "/p/ctevt-all-notes_7.html",
-      "icons": [{"src": "/icons/shortcut-icon-ctevt.png", "sizes": "192x192"}]
+      "icons": [
+        {
+          "src": "/icons/shortcut-icon-ctevt.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Class 11 All Notes",
-      "short_name": "Class 11 Notes",
+      "short_name": "Class 11",
       "description": "Access all notes for Class 11",
       "url": "/p/class-11-all-notes.html",
-      "icons": [{"src": "/icons/shortcut-icon-class11.png", "sizes": "192x192"}]
+      "icons": [
+        {
+          "src": "/icons/shortcut-icon-class11.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Class 12 All Notes",
-      "short_name": "Class 12 Notes",
+      "short_name": "Class 12",
       "description": "Access all notes for Class 12",
       "url": "/p/neb-class-12-all-notes.html",
-      "icons": [{"src": "/icons/shortcut-icon-class12.png", "sizes": "192x192"}]
+      "icons": [
+        {
+          "src": "/icons/shortcut-icon-class12.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "BTech All Notes",
-      "short_name": "BTech Notes",
+      "short_name": "BTech",
       "description": "Access all BTech notes",
       "url": "/p/btech-all-notes.html",
-      "icons": [{"src": "/icons/shortcut-icon-btech.png", "sizes": "192x192"}]
+      "icons": [
+        {
+          "src": "/icons/shortcut-icon-btech.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/icons/screenshot1.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/icons/screenshot2.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "form_factor": "narrow"
     }
   ]
 }
