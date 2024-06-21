@@ -47,8 +47,9 @@
       "url": "/p/ctevt-all-notes_7.html",
       "icons": [
         {
-          "src": "/icons/shortcut-icon-ctevt.png",
-          "sizes": "192x192"
+          "src": "https://rohitks77.github.io/rohitks77-manifest/icons/shortcut-icon-ctevt.png",
+          "sizes": "192x192",
+          "type": "image/png"
         }
       ]
     },
@@ -60,7 +61,8 @@
       "icons": [
         {
           "src": "https://rohitks77.github.io/rohitks77-manifest/icons/shortcut-icon-class11.png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "type": "image/png"
         }
       ]
     },
@@ -72,7 +74,8 @@
       "icons": [
         {
           "src": "https://rohitks77.github.io/rohitks77-manifest/icons/shortcut-icon-class12.png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "type": "image/png"
         }
       ]
     },
@@ -84,7 +87,8 @@
       "icons": [
         {
           "src": "https://rohitks77.github.io/rohitks77-manifest/icons/shortcut-icon-btech.png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "type": "image/png"
         }
       ]
     }
