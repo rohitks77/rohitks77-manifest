@@ -1,70 +1,44 @@
-// Define a unique CACHE_NAME for your assets
-const CACHE_NAME = 'all-notes-cache-v1';
+// Example service worker for caching Blogger content (using Workbox)
 
-// List of URLs to cache
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles/main.css',
-  '/scripts/main.js',
-  // Add more URLs as needed
-];
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/7.2.0/workbox-sw.js');
 
-// Install event
-self.addEventListener('install', event => {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
+workbox.setConfig({ debug: false });
 
-// Fetch event
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        // Clone the request
-        const fetchRequest = event.request.clone();
+// Cache Blogger posts and pages
+workbox.routing.registerRoute(
+  new RegExp('https://www.rohitks77.com.np/.*'),
+  new workbox.strategies.NetworkFirst({
+    cacheName: 'blogger-content-cache',
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [200],
+      }),
+    ],
+  })
+);
 
-        return fetch(fetchRequest).then(
-          response => {
-            // Check if we received a valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-            // Clone the response
-            const responseToCache = response.clone();
+// Cache Google Fonts
+workbox.routing.registerRoute(
+  new RegExp('https://fonts.(googleapis|gstatic).com/.*'),
+  new workbox.strategies.CacheFirst({
+    cacheName: 'google-fonts-cache',
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  })
+);
 
-            caches.open(CACHE_NAME)
-              .then(cache => {
-                cache.put(event.request, responseToCache);
-              });
-            return response;
-          }
-        );
-      })
-  );
-});
-
-// Activate event
-self.addEventListener('activate', event => {
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-});
+// Cache images, CSS, JS, etc.
+workbox.routing.registerRoute(
+  /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
+  new workbox.strategies.CacheFirst({
+    cacheName: 'blogger-assets-cache',
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  })
+);
